@@ -1,0 +1,150 @@
+<div class="container my-5">
+  <div class="progres my-5">
+    <span class="chok sec">
+      <h1>CHOOSE</h1>
+      <h2 class="pro">PROGRAM</h2>
+    </span>
+
+    <span>
+      <img src="../../../assets/images/line-dec.png" alt="" />
+    </span>
+
+    <span>
+      <p>
+        Training Studio is free CSS template for gyms and fitness centers. You
+        are
+        <br />
+        allowed to use this layout for your business website.
+      </p>
+    </span>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="grid">
+    <div class="tabs">
+      <button
+        (click)="selectSection('first')"
+        [class.active]="selectedSection === 'first'"
+      >
+        <img src="../../../assets/images/tabs-first-icon.png" alt="" />First
+        Training Class
+      </button>
+      <button
+        (click)="selectSection('second')"
+        [class.active]="selectedSection === 'second'"
+      >
+        <img src="../../../assets/images/tabs-first-icon.png" alt="" />Second
+        Training Class
+      </button>
+      <button
+        (click)="selectSection('third')"
+        [class.active]="selectedSection === 'third'"
+      >
+        <img src="../../../assets/images/tabs-first-icon.png" alt="" />Third
+        Training Class
+      </button>
+      <button
+        (click)="selectSection('fourth')"
+        [class.active]="selectedSection === 'fourth'"
+      >
+        <img src="../../../assets/images/tabs-first-icon.png" alt="" /> Fourth
+        Training Class
+      </button>
+    </div>
+
+    <div class="content">
+      <div *ngIf="selectedSection === 'first'">
+        <div class="box">
+          <span>
+            <img src="../../../assets/images/training-image-01.jpg" alt="" />
+          </span>
+          <span>
+            <h1>First Training Class</h1>
+            <p>
+              Phasellus convallis mauris sed elementum vulputate. Donec posuere
+              leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed
+              vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia
+              gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut,
+              accumsan diam.
+            </p>
+          </span>
+          <span>
+            <div>
+              <button class="btn_primary">VIEW SHUDELE</button>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div *ngIf="selectedSection === 'second'">
+        <div class="box">
+          <span>
+            <img src="../../../assets/images/training-image-02.jpg" alt="" />
+          </span>
+          <span>
+            <h1>Second Training Class</h1>
+            <p>
+              Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac
+              pulvinar quam tortor a velit. Praesent ultrices erat ante, in
+              ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper
+              at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci
+              varius natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus.
+            </p>
+          </span>
+          <span>
+            <div>
+              <button class="btn_primary">VIEW SHUDELE</button>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div *ngIf="selectedSection === 'third'">
+        <div class="box">
+          <span>
+            <img src="../../../assets/images/training-image-03.jpg" alt="" />
+          </span>
+          <span>
+            <h1>Third Training Class</h1>
+            <p>
+              Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id
+              auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus
+              porta, nisi tortor vulputate sapien, id scelerisque felis magna id
+              felis. Proin neque metus, pellentesque pharetra semper vel,
+              accumsan a neque.
+            </p>
+          </span>
+          <span>
+            <div>
+              <button class="btn_primary">VIEW SHUDELE</button>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <div *ngIf="selectedSection === 'fourth'">
+        <div class="box">
+          <span>
+            <img src="../../../assets/images/training-image-04.jpg" alt="" />
+          </span>
+          <span>
+            <h1>Fourth Training Class</h1>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Aenean ultrices elementum odio
+              ac tempus. Etiam eleifend orci lectus, eget venenatis ipsum
+              commodo et.
+            </p>
+          </span>
+          <span>
+            <div>
+              <button class="btn_primary">VIEW SHUDELE</button>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

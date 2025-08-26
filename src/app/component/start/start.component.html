@@ -1,0 +1,85 @@
+<div class="video-container" id="home">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="../../../assets/images/gym-video.mp4" type="video/mp4" />
+  </video>
+
+  <button *ngIf="isVisible" class="scroll-to-top" (click)="scrollToTop()">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <div class="vedo">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <h1
+            class="my-2"
+            href="javascript:void(0)"
+            (click)="scrollToSection('home')"
+          >
+            TRAINING
+            <p>STUDIO</p>
+          </h1>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="javascript:void(0)" (click)="scrollToSection('home')"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" (click)="scrollToSection('about')"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" (click)="scrollToSection('classes')"
+              >CLASSES</a
+            >
+          </li>
+          <li>
+            <a href="javascript:void(0)" (click)="scrollToSection('shedule')"
+              >SCHEDULES</a
+            >
+          </li>
+          <li><a href="#contect">CONTACT</a></li>
+          <li>
+            <a href="#signup"><button class="btn_primary">SINGN UP</button></a>
+          </li>
+        </ul>
+        <div class="menu-toggle" (click)="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text">
+      <h1>WORK HARDER,GET STRONGER</h1>
+      <h2>EASYWITH OUR <span>GYM</span></h2>
+      <button class="btn_primary">
+        <a href="javascript:void(0)" (click)="scrollToSection('about')"
+          >BECAME A MEMBER</a
+        >
+      </button>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <app-about></app-about>
+</section>
+
+<section id="classes">
+  <app-classes></app-classes>
+</section>
+
+<section id="shedule">
+  <app-shedule></app-shedule>
+</section>
+
+<!-- <section id="contect">
+  <app-about></app-about>
+</section> -->
+
+<!-- <section id="about">
+  <app-about></app-about>
+</section> -->

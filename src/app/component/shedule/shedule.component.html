@@ -1,0 +1,149 @@
+<div class="bak">
+  <div class="container">
+    <div class="progres">
+      <span class="chok sec">
+        <h1>CHOOSE</h1>
+        <h1 class="pro">PROGRAM</h1>
+      </span>
+
+      <span>
+        <img src="../../../assets/images/line-dec.png" alt="" />
+      </span>
+
+      <span>
+        <p>
+          Training Studio is free CSS template for gyms and fitness centers. You
+          are
+          <br />
+          allowed to use this layout for your business website.
+        </p>
+      </span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="grid">
+      <div class="tabs">
+        <button
+          (click)="selectSection('first')"
+          [class.active]="selectedSection === 'first'"
+        >
+          Monday
+        </button>
+
+        <p>/</p>
+
+        <button
+          (click)="selectSection('second')"
+          [class.active]="selectedSection === 'second'"
+        >
+          Tuesday
+        </button>
+
+        <p>/</p>
+
+        <button
+          (click)="selectSection('third')"
+          [class.active]="selectedSection === 'third'"
+        >
+          Wednesday
+        </button>
+
+        <p>/</p>
+
+        <button
+          (click)="selectSection('fourth')"
+          [class.active]="selectedSection === 'fourth'"
+        >
+          Thursday
+        </button>
+      </div>
+
+      <div class="content">
+        <div *ngIf="selectedSection === 'first'">
+          <div style="color: aliceblue">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            voluptatem! Incidunt omnis inventore minima veritatis commodi itaque
+            eum debitis fugit praesentium esse modi, odio laboriosam ea? Fuga
+            tenetur possimus dolorem.
+          </div>
+        </div>
+
+        <div *ngIf="selectedSection === 'second'">
+          <div class="container">
+            <table>
+              <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>30</td>
+                <td>London</td>
+              </tr>
+              <tr>
+                <td>Charlie</td>
+                <td>28</td>
+                <td>28</td>
+                <td>Paris</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div *ngIf="selectedSection === 'third'">
+          <div class="container">
+            <table>
+              <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>30</td>
+                <td>London</td>
+              </tr>
+              <tr>
+                <td>Charlie</td>
+                <td>28</td>
+                <td>28</td>
+                <td>Paris</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div *ngIf="selectedSection === 'fourth'">
+          <div class="container">
+            <table>
+              <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>30</td>
+                <td>London</td>
+              </tr>
+              <tr>
+                <td>Charlie</td>
+                <td>28</td>
+                <td>28</td>
+                <td>Paris</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
